@@ -89,7 +89,7 @@
 #personal-image {
     width: 500px;
     height: 500px;
-    border-radius: 50%;
+    border-radius: 10% 30% 50% 70%;
 }
 
 #typing {
@@ -130,7 +130,7 @@
     justify-content: space-around;
     margin: 50px;
     padding: 40px;
-    border-radius: 10px;
+    border-radius: 50px 0;
     box-shadow: 0 0 5px 5px rgb(194, 193, 193);
     background-color: #0c2f4b2c;
 }
@@ -181,7 +181,7 @@
 
 .web .text p .special {
     font-family: 'Courier New', Courier, monospace;
-    color:blue;
+    color:rgb(6, 6, 150);
     font-weight: 700;
 }
 

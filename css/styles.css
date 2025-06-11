@@ -2,7 +2,7 @@
 @import url("./index.css");
 @import url("./projects.css");
 @import url("./CSS-Reset.css");
-
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Bonheur+Royale&family=Lekton:ital,wght@0,400;0,700;1,400&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap');
 
 nav {
     display: flex;
@@ -45,9 +45,13 @@ nav {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: 10px;
     margin: 10px;
-    border-radius: 10px;
+    border-radius: 25% 10%;
     color: white;
     transition: all linear 300ms;
+}
+
+#chosen {
+    color: orangered !important;
 }
 
 #links a:hover {
@@ -84,4 +88,10 @@ footer {
     width: 40px;
     height: 40px;
     object-fit: contain;
+    transition: transform 300ms ease-in-out;
+}
+
+#contacts a img:hover {
+    transform: scale(120%);
+    transition: transform 300ms ease-in-out;
 }
