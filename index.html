@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Bonheur+Royale&family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap" rel="stylesheet">
+    <link rel="icon" href="./media/logo-white.png" />
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Homepage</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a id="logo-link" href="./index.html">
+            <div id="me">
+                <img class="logo" src="./media/logo-white.png" />
+                <h3 id="name">Yusuf Allam</h3>
+            </div>
+        </a>
+        <div id="links">
+          <a href="./index.html">Home</a>
+          <a href="./projects.html">Projects</a>
+          <a href="./aboutme.html">About</a>
+        </div>
+      </nav>
+      <div id="introduction-container">
+        <div id="video-container">
+            <video autoplay loop muted playsinline id="background-video">
+                <source src="./media/Background.mp4" type="video/mp4"/>
+            </video>
+        </div>
+        <div id="introduction">
+          <div>
+            <h1><span id="typing"></span></h1>
+          </div>
+          <div>
+            <img id="personal-image" src="./media/personal-image.jpg" />
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="card school">
+        <div class="text">
+            <img id="hat" src="./media/graduate-hat-removebg-preview.png">
+          <p><span class="special">G10, R3S, S'27 Student<br> DECI Level 4: Web Development</span><br>
+            I am in grade 10 (G10) at RedSea STEM School (R3S) S'27 batch!<br>
+            I and participated in and finished Digital Egypt Cubs Initiative (DECI) <br>Level 2 and Level 3: Web Development and currently attending Level 4: Web Development</p>
+        </div>
+        <div class="pictures">
+          <img id="first" src="./media/DECI-removebg-preview.png">
+          <img id="second" src="./media/school-removebg-preview.png">
+        </div>
+      </section>
+      <section class="card web">
+        <div class="text">
+            <img id="code" src="./media/coding-removebg-preview.png">
+          <p><span class="special">Web Developer in Training<br>Toolkit: HTML, CSS, JS<br>Learning Backend Development and Libraries</span><br>
+            Learning and practicing to become an innovative and skilled web developer.<br>
+            Skilled (and still improving!) in HTML, CSS, and client-side Javascript<br>Subtle skill in server-side Javascript and Backend development like NodeJS, npm, Express and libraries.</p>
+        </div>
+        <div class="pictures">
+          <img class="icons" id="html" src="./media/html-5.png">
+          <img class="icons" id="js" src="./media/javascript.png">
+          <img class="icons" id="css" src="./media/css-3.png">
+        </div>
+      </section>
+    </main>
+    <footer>
+        <div id="footer-text">
+            <img class="logo" src="./media/logo-white.png" />            
+            <p>© 2025 Yusuf Allam. All rights reserved</p>
+        </div>
+        <div id="contacts">
+            <a href="mailto:joallam2008@gmail.com" target="_blank"><img id="email" src="./media/email.png"></a>
+            <a href="https://www.linkedin.com/in/yusuf-allam-91726b301/" target="_blank"><img id="linkedin" src="./media/linkedIn.png"></a>
+            <a href="https://www.facebook.com/jo.allam.9" target="_blank"><img id="facebook" src="./media/facebook.png"></a>
+            <a href="https://www.instagram.com/joallam2008/" target="_blank"><img id="instagram" src="./media/instagram.png"></a>
+            <a href="https://x.com/JoAllam429956" target="_blank"><img id="twitter" src="./media/twitter.png"></a>
+        </div>
+    </footer>
+  </body>
+  <script>
+    new Typed("#typing", {
+      strings: [
+        "Hi, I'm Jo.",
+        "Frontend. Backend. Full passion.",
+        "Explore my projects!",
+        "Let's build.",
+        "Let's create.",
+        "Let's connect!",
+      ],
+      typeSpeed: 50,
+      backSpeed: 30,
+      loop: true,
+      backDelay: 1000
+    });
+  </script>
+</html>

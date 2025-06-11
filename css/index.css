@@ -1,0 +1,212 @@
+@keyframes jump {
+    0% {
+        transform:translateY(0);
+    }
+    25% {
+        transform:translateY(-70px) scale(110%);
+    }
+
+    50% {
+        transform:translateY(10px);
+    }
+
+    65% {
+        transform:translateY(0) scale(100%);
+    }
+    100% {
+        transform:translateY(0);
+    }
+}
+
+@keyframes html-revolve {
+    0% {
+        transform: translate(0, 0) rotate(360deg);
+    }
+    25% {
+        transform: translate(280px, 0);
+    }
+    50% {
+        transform: translate(140px, -180px) rotate(360deg);
+    }
+    75% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+@keyframes css-revolve {
+    0% {
+        transform: translate(0, 0) rotate(-360deg);
+    }
+    25% {
+        transform: translate(-140px, -180px);
+
+    }
+    50% {
+        transform: translate(-280px, 0) rotate(-360deg);
+    }
+    75% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+@keyframes js-revolve {
+    0% {
+        transform: translate(0, 0) rotate(360deg);
+    }
+    25% {
+        transform: translate(-140px, 180px);
+    }
+    50% {
+        transform: translate(140px, 180px) rotate(-360deg);
+    }
+    75% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+#introduction {
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding: 50px;
+    gap: 30px;
+}
+
+#introduction div:first-child {
+    width: 45%;
+    background-color: rgba(0, 0, 0, 0.699);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#personal-image {
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+}
+
+#typing {
+    font-size: 80px;
+    font-family:"Newsreader", serif;
+    font-weight: 400;
+    color: white;
+}
+
+.typed-cursor {
+    font-size: 80px;
+    font-family:"Newsreader", serif;
+    font-weight: 400;
+    color: white;
+}
+
+#video-container {
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    overflow: hidden;
+
+}
+
+#video-container video {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+#introduction-container {
+    margin-bottom: 100px;
+}
+
+.card {
+    display: flex;
+    justify-content: space-around;
+    margin: 50px;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 0 5px 5px rgb(194, 193, 193);
+    background-color: #0c2f4b2c;
+}
+
+.card .text {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    line-height: 1.5;
+    font-family:'Gill Sans', 'Gill Sans MT', "Calibri", 'Trebuchet MS', sans-serif;
+    flex: 1;
+    font-size: 18px;
+}
+
+.card .pictures {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex: 1;
+    padding: 20px 0;
+}
+
+.school .pictures img {
+    width: 50%;
+    object-fit: cover;
+}
+
+.web {
+    flex-direction: row-reverse;
+}
+
+#first {
+    animation: jump 2s ease-in-out 1s infinite;
+}
+
+#second {
+    animation: jump 2s ease-in-out 1.2s infinite;
+}
+
+.school .text p .special {
+    font-family: 'Courier New', Courier, monospace;
+    color:orangered;
+    font-weight: 700;
+}
+
+.web .text p .special {
+    font-family: 'Courier New', Courier, monospace;
+    color:blue;
+    font-weight: 700;
+}
+
+
+#hat, #code {
+    width: 15%;
+    object-fit: cover
+}
+
+.icons {
+    width: 20%;
+    object-fit: cover;
+    margin: 20px;
+}
+
+#html {
+    animation: html-revolve 5s ease-in-out 1s infinite;
+}
+
+#css {
+    animation: css-revolve 5s ease-in-out 1s infinite;
+}
+
+#js {
+    margin-bottom: 180px;
+    animation: js-revolve 5s ease-in-out 1s infinite;
+}
+
