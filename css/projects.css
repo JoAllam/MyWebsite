@@ -11,13 +11,12 @@
     color:rgb(6, 6, 150);
 }
 
-#gallery {
+#projects {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    margin-top: 70px;
+    margin: 30px 0;
     padding: 40px;
-    border: 1px solid black;
     gap: 100px;
 }
 
