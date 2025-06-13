@@ -10,6 +10,7 @@ nav {
     align-items: center;
     background-color: #0c2f4b;
     padding: 10px;
+    font-size: 16px;
 }
 
 #me {
@@ -23,24 +24,24 @@ nav {
     border-left: 1px solid white;
     margin-left: 20px;
     color: #e1e1e1;
-    font-size: 40px;
+    font-size: 2.5em;
     font-weight: 700;
 }
 
 .logo {
-    width:60px;
-    height: 60px;
+    width: 3.75em;
+    height: 3.75em;
     align-self: center;
 }
 
 #links {
     display: flex;
     align-items: center;
-    gap: 50px;
+    gap: 3em;
 }
 
 #links a {
-    font-size: 25px;
+    font-size: 1.5em;
     text-decoration: none;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     padding: 10px;
@@ -48,6 +49,12 @@ nav {
     border-radius: 25% 10%;
     color: white;
     transition: all linear 300ms;
+}
+
+#menu {
+    width: 3em;
+    height: 3em;
+    display: none;
 }
 
 #chosen {
@@ -71,7 +78,7 @@ footer {
     color: #e1e1e1;
     font-size: 20px;
     padding: 10px 30px;
-    gap: 100px;
+    gap: 6em;
     display: flex;
     flex-direction: row;
 }
@@ -79,14 +86,14 @@ footer {
 #footer-text, #contacts {
     display: flex;
     align-items: center;
-    gap: 30px;
+    gap: 1.8em;
     flex: 1;
     justify-content: center; 
 }
 
 #contacts a img {
-    width: 40px;
-    height: 40px;
+    width: 2.5em;
+    height: 2.5em;
     object-fit: contain;
     transition: transform 300ms ease-in-out;
 }
@@ -94,4 +101,84 @@ footer {
 #contacts a img:hover {
     transform: scale(120%);
     transition: transform 300ms ease-in-out;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    nav {
+        font-size: 14px;
+    }
+    footer {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    nav {
+        font-size: 14px;
+    }
+
+
+    #links {
+        display: none;
+        position: fixed;
+        flex-direction: column;
+        border-radius: 10px;
+        top: 60px;
+        right: 5%;
+        background-color: black;
+        gap: 1em;
+    }
+
+    #links a{
+        font-size: 1.2em
+    }
+
+    #menu {
+        display: block;
+        position: absolute;
+        right: 10%;
+    }
+
+    footer {
+        font-size: 12px;
+        flex-direction: column;
+        gap: 2em;
+    }
+}
+
+@media (max-width: 480px) {
+    nav {
+        font-size: 10px;
+        justify-content: flex-start;
+    }
+
+    #me {
+        margin-left: 20px;
+    }
+
+    #links {
+        display: none;
+        position: fixed;
+        flex-direction: column;
+        border-radius: 10px;
+        top: 60px;
+        right: 5%;
+        background-color: black;
+        gap: 1em;
+    }
+
+    #links a{
+        font-size: 1.2em
+    }
+
+    #menu {
+        display: block;
+        position: absolute;
+        right: 10%;
+    }
+
+    footer {
+        font-size: 10px;
+        gap: 2em;
+    }
 }

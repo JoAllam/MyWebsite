@@ -1,6 +1,10 @@
+#about-main {
+    font-size: 18px;
+}
+
 .heading {
     font-family: "Lekton", monospace;
-    font-size: 60px;
+    font-size: 3.75em;
     color:rgb(6, 6, 150);
     text-align: center;
     margin-top: 30px;
@@ -48,4 +52,30 @@ hr {
 #pictures figure img {
     border-radius: 10px;
     margin: 10px;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    #about-main {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    #about-main {
+        font-size: 14px;
+    }
+    #pictures {
+        display: flex;
+        flex-wrap:wrap;
+    }
+}
+
+@media (max-width: 480px) {
+#about-main {
+        font-size: 12px;
+    }
+    #pictures {
+        display: flex;
+        flex-wrap: wrap;
+    }
 }

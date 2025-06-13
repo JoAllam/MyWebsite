@@ -23,10 +23,10 @@
         transform: translate(0, 0) rotate(360deg);
     }
     25% {
-        transform: translate(280px, 0);
+        transform: translate(25vw, 0);
     }
     50% {
-        transform: translate(140px, -180px) rotate(360deg);
+        transform: translate(12.5vw, -14vw) rotate(360deg);
     }
     75% {
         transform: translate(0, 0);
@@ -40,11 +40,11 @@
         transform: translate(0, 0) rotate(-360deg);
     }
     25% {
-        transform: translate(-140px, -180px);
+        transform: translate(-12.5vw, -14vw);
 
     }
     50% {
-        transform: translate(-280px, 0) rotate(-360deg);
+        transform: translate(-25vw, 0) rotate(-360deg);
     }
     75% {
         transform: translate(0, 0);
@@ -58,10 +58,10 @@
         transform: translate(0, 0) rotate(360deg);
     }
     25% {
-        transform: translate(-140px, 180px);
+        transform: translate(-12.5vw, 14vw);
     }
     50% {
-        transform: translate(140px, 180px) rotate(-360deg);
+        transform: translate(12.5vw, 14vw) rotate(-360deg);
     }
     75% {
         transform: translate(0, 0);
@@ -71,36 +71,60 @@
     }
 }
 
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    25% {
+        transform: rotate(360deg);
+    }
+    50% {
+        transform: rotate(360deg);
+    }
+    75% {
+        transform: rotate(0deg);
+    }
+    100% {
+        tranform: rotate(0deg);
+    }
+}
+
 #introduction {
     display: flex;
-    justify-content:space-around;
+    justify-content:space-evenly;
     align-items: center;
     padding: 50px;
     gap: 30px;
+    font-size: 16px;
 }
 
 #introduction div:first-child {
-    width: 45%;
+    width: 100%;
     background-color: rgba(0, 0, 0, 0.699);
-    padding: 20px;
+    padding: 5px;
     border-radius: 10px;
 }
 
+#introduction div {
+    display: flex;
+    justify-content: center;
+}
+
 #personal-image {
-    width: 500px;
-    height: 500px;
+    width: 80%;
+    object-fit: cover;
     border-radius: 10% 30% 50% 70%;
 }
 
 #typing {
-    font-size: 80px;
+    font-size: 2.5em;
     font-family:"Newsreader", serif;
     font-weight: 400;
     color: white;
 }
 
 .typed-cursor {
-    font-size: 80px;
+    font-size: 2.5em;
     font-family:"Newsreader", serif;
     font-weight: 400;
     color: white;
@@ -116,27 +140,28 @@
 
 #video-container video {
     width: 100%;
-    height: 100vh;
+    height: 105vh;
     object-fit: cover;
     object-position: center;
 }
 
 #introduction-container {
-    margin-bottom: 100px;
+    margin-bottom: 20vh;
 }
 
 .card {
     display: flex;
     justify-content: space-around;
-    margin: 50px;
-    padding: 40px;
+    margin: 50px 50px 100px 50px;
+    padding: 1.5em;
     border-radius: 50px 0;
     box-shadow: 0 0 5px 5px rgb(194, 193, 193);
     background-color: #0c2f4b2c;
+    font-size: 16px;
 }
 
 .card .text {
-    padding: 20px;
+    padding: 1.25em;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -145,7 +170,7 @@
     line-height: 1.5;
     font-family:'Gill Sans', 'Gill Sans MT', "Calibri", 'Trebuchet MS', sans-serif;
     flex: 1;
-    font-size: 18px;
+    font-size: 1.125em;
 }
 
 .card .pictures {
@@ -208,5 +233,99 @@
 #js {
     margin-bottom: 180px;
     animation: js-revolve 5s ease-in-out 1s infinite;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    #introduction {
+        flex-direction: column;
+        font-size: 14px;
+
+    }
+    #personal-image {
+    width: 40%;
+    object-fit: cover;
+    border-radius: 10% 30% 50% 70%;
+    }
+    
+    #video-container video {
+    width: 100%;
+    height: 125vh;
+    object-fit: cover;
+    object-position: center;
+}
+#introduction div:first-child {
+    width: 100%;
+}
+.card {
+    font-size: 14px;
+}
+#html, #css, #js {
+    animation: rotate 4s ease-in-out 1s infinite;
+    width: 25%;
+}
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    #introduction {
+        flex-direction: column;
+        font-size: 12px;
+    }
+    #personal-image {
+    width: 50%;
+    object-fit: cover;
+    border-radius: 10% 30% 50% 70%;
+    margin-bottom: 30px;
+    }
+    
+    #video-container video {
+    width: 100%;
+    height: 115vh;
+    object-fit: cover;
+    object-position: center;
+}
+#introduction div:first-child {
+    width: 110%;
+}
+.card {
+    font-size: 13px;
+    flex-direction: column;
+    gap: 30px;
+}
+#html, #css, #js {
+    animation: rotate 4s ease-in-out 1s infinite;
+    width: 25%;
+}
+}
+
+@media (max-width: 480px) {
+    #introduction {
+        flex-direction: column;
+        font-size: 8px;
+    }
+    #personal-image {
+    width: 60%;
+    object-fit: cover;
+    border-radius: 10% 30% 50% 70%;
+    margin-bottom: 10px;
+    }
+    
+    #video-container video {
+    width: 100%;
+    height: 95vh;
+    object-fit: cover;
+    object-position: center;
+}
+#introduction div:first-child {
+    width: 120%;
+}
+.card {
+    font-size: 10px;
+    flex-direction: column;
+    gap: 30px;
+}
+#html, #css, #js {
+    animation: rotate 4s ease-in-out 1s infinite;
+    width: 25%;
+}
 }
 
