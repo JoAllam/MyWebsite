@@ -1,3 +1,4 @@
+/* Jump animation */
 @keyframes jump {
     0% {
         transform:translateY(0);
@@ -17,7 +18,7 @@
         transform:translateY(0);
     }
 }
-
+/* Revolve Animation for HTML icon */
 @keyframes html-revolve {
     0% {
         transform: translate(0, 0) rotate(360deg);
@@ -35,6 +36,7 @@
         transform: translate(0, 0);
     }
 }
+/* Revolve Animation for CSS Icon */
 @keyframes css-revolve {
     0% {
         transform: translate(0, 0) rotate(-360deg);
@@ -53,6 +55,7 @@
         transform: translate(0, 0);
     }
 }
+/* Revolve Animation for JS Icon */
 @keyframes js-revolve {
     0% {
         transform: translate(0, 0) rotate(360deg);
@@ -70,7 +73,7 @@
         transform: translate(0, 0);
     }
 }
-
+/* Rotation animation for all icons */
 @keyframes rotate {
     0% {
         transform: rotate(0deg);
@@ -89,6 +92,12 @@
     }
 }
 
+/* Introduction Styles */
+
+#introduction-container {
+    margin-bottom: 20vh; /* To make space between it and the cards */
+}
+
 #introduction {
     display: flex;
     justify-content:space-evenly;
@@ -97,7 +106,7 @@
     gap: 30px;
     font-size: 16px;
 }
-
+/* The typing animation div */
 #introduction div:first-child {
     width: 100%;
     background-color: rgba(0, 0, 0, 0.699);
@@ -116,26 +125,18 @@
     border-radius: 10% 30% 50% 70%;
 }
 
-#typing {
+#typing, .typed-cursor {
     font-size: 2.5em;
     font-family:"Newsreader", serif;
     font-weight: 400;
     color: white;
 }
-
-.typed-cursor {
-    font-size: 2.5em;
-    font-family:"Newsreader", serif;
-    font-weight: 400;
-    color: white;
-}
-
+/* Video and video container */
 #video-container {
     width: 100%;
-    position: absolute;
+    position: absolute; 
     z-index: -1;
     overflow: hidden;
-
 }
 
 #video-container video {
@@ -144,10 +145,7 @@
     object-fit: cover;
     object-position: center;
 }
-
-#introduction-container {
-    margin-bottom: 20vh;
-}
+/* Cards */
 
 .card {
     display: flex;
@@ -157,7 +155,7 @@
     border-radius: 50px 0;
     box-shadow: 0 0 5px 5px rgb(194, 193, 193);
     background-color: #0c2f4b2c;
-    font-size: 16px;
+    font-size: 16px;/* base size */
 }
 
 .card .text {
@@ -169,15 +167,15 @@
     text-align: center;
     line-height: 1.5;
     font-family:'Gill Sans', 'Gill Sans MT', "Calibri", 'Trebuchet MS', sans-serif;
-    flex: 1;
+    flex: 1; /* So both the text and icons take roughly the same space */
     font-size: 1.125em;
 }
 
 .card .pictures {
     display: flex;
     justify-content: center;
-    align-items: flex-end;
-    flex: 1;
+    align-items: flex-end; /* So the icons are always in the bottom and have space for animation */
+    flex: 1; /* So both the text and icons take roughly the same space */
     padding: 20px 0;
 }
 
@@ -197,7 +195,7 @@
 #second {
     animation: jump 2s ease-in-out 1.2s infinite;
 }
-
+/* Special styling for headings */
 .school .text p .special {
     font-family: 'Courier New', Courier, monospace;
     color:orangered;
@@ -235,6 +233,7 @@
     animation: js-revolve 5s ease-in-out 1s infinite;
 }
 
+/* Small Laptops and Tablets */
 @media (min-width: 769px) and (max-width: 1024px) {
     #introduction {
         flex-direction: column;
@@ -264,6 +263,7 @@
     width: 25%;
 }
 }
+/* IPads */
 
 @media (min-width: 481px) and (max-width: 768px) {
     #introduction {
@@ -296,6 +296,7 @@
     width: 25%;
 }
 }
+/* Phones */
 
 @media (max-width: 480px) {
     #introduction {

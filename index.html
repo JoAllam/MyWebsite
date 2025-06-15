@@ -9,79 +9,93 @@
     <title>Homepage</title>
   </head>
   <body>
+    <!-- Header & Navbar -->
     <header>
       <nav>
+        <!--Logo & Name-->
         <a id="logo-link" href="./index.html">
             <div id="me">
-                <img class="logo" src="./media/logo-white.png" />
+                <img class="logo" src="./media/logo-white.png" alt="yusuf allam white logo" />
                 <h3 id="name">Yusuf Allam</h3>
             </div>
         </a>
+        <!--Links to other pages-->
         <div id="links">
           <a href="./index.html" id="chosen">Home</a>
           <a href="./projects.html">Projects</a>
           <a href="./aboutme.html">About</a>
         </div>
-        <img id="menu" src="./media/menu.png">
+        <!--Menu icon for links (hidden at first, appears in small width devices)-->
+        <img id="menu" src="./media/menu.png" alt="menu logo">
       </nav>
+      <!--Typing animation, background video and personal photo-->
       <div id="introduction-container">
+        <!--Background video-->
         <div id="video-container">
             <video autoplay loop muted playsinline id="background-video">
                 <source src="./media/Background.mp4" type="video/mp4"/>
             </video>
         </div>
+        <!--Typing animation and personal image-->
         <div id="introduction">
           <div>
             <h1><span id="typing"></span></h1>
           </div>
           <div>
-            <img id="personal-image" src="./media/personal-image.jpg" />
+            <img id="personal-image" src="./media/personal-image.jpg" alt="personal image of yusuf allam"/>
           </div>
         </div>
       </div>
     </header>
+    <!--Main sections-->
     <main>
+      <!--School Section-->
       <section class="card school">
         <div class="text">
-            <img id="hat" src="./media/graduate-hat-removebg-preview.png">
-          <p><span class="special">G10, R3S, S'27 Student<br> DECI Level 4: Web Development</span><br>
-            I am in grade 10 (G10) at Red Sea STEM School (R3S) S'27 batch!<br>
-            I and participated in and finished DECI Level 2 and Level 3: Web Development and currently attending Level 4: Web Development</p>
+            <img id="hat" src="./media/graduate-hat-removebg-preview.png" alt="graduation hat">
+          <p><span class="special">G11, R3S, S'27 Student<br> DECI Level 4: Web Development</span><br>
+            Grade 11 (G11) at Red Sea STEM School (R3S) S'27 batch!<br>
+            Participated in and finished DECI Level 2 and Level 3: Web Development and currently attending Level 4: Web Development</p>
         </div>
         <div class="pictures">
-          <img id="first" src="./media/DECI-removebg-preview.png">
-          <img id="second" src="./media/school-removebg-preview.png">
+          <img id="first" src="./media/DECI-removebg-preview.png" alt="DECI logo">
+          <img id="second" src="./media/school-removebg-preview.png" alt="Red Sea STEM school logo">
         </div>
       </section>
+      <!--Web section-->
       <section class="card web">
         <div class="text">
-            <img id="code" src="./media/coding-removebg-preview.png">
+            <img id="code" src="./media/coding-removebg-preview.png" alt="A logo representing coding">
           <p><span class="special">Web Developer in Training<br>Toolkit: HTML, CSS, JS<br>Learning Backend Development and Libraries</span><br>
             Learning and practicing to become an innovative and adept web developer.<br>
             Skilled (and still improving!) in HTML, CSS, and client-side Javascript<br>Subtle knowledge about Backend development like NodeJS, npm, Express and libraries.</p>
         </div>
         <div class="pictures">
-          <img class="icons" id="html" src="./media/html-5.png">
-          <img class="icons" id="js" src="./media/javascript.png">
-          <img class="icons" id="css" src="./media/css-3.png">
+          <img class="icons" id="html" src="./media/html-5.png" alt="html5 logo">
+          <img class="icons" id="js" src="./media/javascript.png" alt="js logo">
+          <img class="icons" id="css" src="./media/css-3.png" alt="css3 logo">
         </div>
       </section>
     </main>
+    <!--Footer-->
     <footer>
+      <!--Logo and rights-->
         <div id="footer-text">
-            <img class="logo" src="./media/logo-white.png" />            
+            <img class="logo" src="./media/logo-white.png" alt="yusuf allam white logo"/>            
             <p>© 2025 Yusuf Allam. All rights reserved</p>
         </div>
+        <!--Contacts logos-->
         <div id="contacts">
-            <a href="mailto:joallam2008@gmail.com" target="_blank"><img id="email" src="./media/email.png"></a>
-            <a href="https://www.linkedin.com/in/yusuf-allam-91726b301/" target="_blank"><img id="linkedin" src="./media/linkedIn.png"></a>
-            <a href="https://www.facebook.com/jo.allam.9" target="_blank"><img id="facebook" src="./media/facebook.png"></a>
-            <a href="https://www.instagram.com/joallam2008/" target="_blank"><img id="instagram" src="./media/instagram.png"></a>
-            <a href="https://x.com/JoAllam429956" target="_blank"><img id="twitter" src="./media/twitter.png"></a>
+            <a href="mailto:joallam2008@gmail.com" target="_blank"><img id="email" src="./media/email.png" alt="email logo"></a>
+            <a href="https://www.linkedin.com/in/yusuf-allam-91726b301/" target="_blank"><img id="linkedin" src="./media/linkedIn.png" alt="linkedin logo"></a>
+            <a href="https://www.facebook.com/jo.allam.9" target="_blank"><img id="facebook" src="./media/facebook.png" alt="facebook logo"></a>
+            <a href="https://www.instagram.com/joallam2008/" target="_blank"><img id="instagram" src="./media/instagram.png" alt="instagram logo"></a>
+            <a href="https://x.com/JoAllam429956" target="_blank"><img id="twitter" src="./media/twitter.png" alt="twitter logo"></a>
         </div>
     </footer>
   </body>
   <script src="./js/app.js"></script>
+  <!--Typing animation code-->
   <script>
     new Typed("#typing", {
       strings: [
@@ -92,7 +106,7 @@
         "Let's create.",
         "Let's connect!",
       ],
-      typeSpeed: 50,
+      typeSpeed: 60,
       backSpeed: 30,
       loop: true,
       backDelay: 1000

@@ -11,6 +11,7 @@
     color:rgb(6, 6, 150);
 }
 
+/* Projects Gallery */
 #projects {
     display: flex;
     justify-content: space-evenly;
